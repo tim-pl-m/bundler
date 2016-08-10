@@ -5,6 +5,7 @@ module Bundler
   class Settings
     BOOL_KEYS = %w(
       cache_all
+      disable_checksum_validation
       disable_local_branch_check
       disable_shared_gems
       frozen
