@@ -10,9 +10,9 @@ module Bundler
 
       def initialize(options = {})
         #if options["no-color"] || !STDOUT.tty?
-        if options["no-color"]
-          Thor::Base.shell = Thor::Shell::Basic
-        end
+        #if options["no-color"]
+        #  Thor::Base.shell = Thor::Shell::Basic
+        #end
         @shell = Thor::Base.shell.new
         @level = ENV["DEBUG"] ? "debug" : "info"
         @warning_history = []
