@@ -97,7 +97,8 @@ class Bundler::Thor
     protected
 
       def can_display_colors?
-        stdout.tty?
+        #stdout.tty?
+        true
       end
 
       # Overwrite show_diff to show diff with colors if Diff::LCS is
